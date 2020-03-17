@@ -30,7 +30,7 @@
         var eQ = { x:0, y: 0 };
 
         function setup() {
-          socket = io.connect (process.env.PORT || 3000);
+          socket = io.connect('http://localhost:3000');
           socket.on ('pl', plF);
 
           createCanvas (800, 600);
